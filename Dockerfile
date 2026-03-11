@@ -1,8 +1,8 @@
 # 基础镜像
-FROM openjdk:17
+FROM openjdk:21
 
 # 维护者信息
-LABEL maintainer="youlai <youlaitech@163.com>"
+LABEL maintainer="jiangjiang.xia <jiangjiang.xia@hknba.com>"
 
 # 设置时区（Debian直接使用环境变量）
 ENV TZ=Asia/Shanghai
