@@ -48,7 +48,7 @@ spring:
         starttls:
           enable: true
     # 邮件发送者
-    from: youlaitech@163.com
+    from: jiangjiang.xia@163.com
 mybatis-plus:
   mapper-locations: classpath*:/mapper/**/*.xml
   global-config:
@@ -153,10 +153,10 @@ springdoc:
     - group: "系统管理" # 分组名称
       paths-to-match: "/**" # 匹配的请求路径
       packages-to-scan: # 扫描的 Controller 包，限制只生成指定包的接口文档
-        - com.youlai.boot.auth.controller
-        - com.youlai.boot.system.controller
-        - com.youlai.boot.platform.file.controller
-        - com.youlai.boot.platform.codegen.controller
+        - com.bbfw.auth.controller
+        - com.bbfw.system.controller
+        - com.bbfw.platform.file.controller
+        - com.bbfw.platform.codegen.controller
   default-flat-param-object: true # 将对象参数扁平化显示在文档中
 
 # knife4j 配置

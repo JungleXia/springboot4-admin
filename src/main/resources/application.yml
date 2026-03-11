@@ -1,6 +1,6 @@
 spring:
   application:
-    name: youlai-boot
+    name: bbfw
   profiles:
     active: dev
   config:

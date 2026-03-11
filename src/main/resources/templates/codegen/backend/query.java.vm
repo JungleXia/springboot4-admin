@@ -2,8 +2,7 @@ package ${packageName}.${moduleName}.${subpackageName};
 
 import ${packageName}.common.base.BaseQuery;
 import io.swagger.v3.oas.annotations.media.Schema;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.Data;
 #if(${hasLocalDateTime})
 import java.time.LocalDateTime;
 import java.util.List;
@@ -19,8 +18,7 @@ import java.math.BigDecimal;
  * @since ${date}
  */
 @Schema(description ="$!{businessName}查询对象")
-@Getter
-@Setter
+@Data
 public class ${entityName}Query extends BaseQuery {
 
 #if($fieldConfigs)

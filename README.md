@@ -82,7 +82,7 @@ youlai-boot
 │   │   └── service/                     # 业务逻辑层
 │   ├── tool/                            # 工具模块
 │   │   └── codegen/                     # 代码生成器
-│   └── YouLaiBootApplication.java       # 启动类
+│   └── BbfwApplication.java       # 启动类
 └── pom.xml                              # Maven 配置
 ```
 
@@ -108,7 +108,7 @@ git clone https://gitee.com/youlaiorg/youlai-boot.git
 
 ### 4. 启动项目
 
-运行 [YoulaiBootApplication.java](src/main/java/com/youlai/boot/YouLaiBootApplication.java)，访问 [http://localhost:8000/doc.html](http://localhost:8000/doc.html) 验证。
+运行 [BbfwApplication.java](src/main/java/com/bbfw/BbfwApplication.java)，访问 [http://localhost:8000/doc.html](http://localhost:8000/doc.html) 验证。
 
 ## 🐳 Docker 部署
 

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.bbfw.system.mapper.MemberMapper">
+
+    <!-- 获取会员信息分页列表 -->
+    <select id="getMemberPage" resultType="com.bbfw.system.model.vo.MemberVo">
+        SELECT
+                id,
+                name,
+                mobile,
+                gender,
+                age
+        FROM
+            member
+        <where>
+            <if test="queryParams.name != null and queryParams.name != ''">
+                AND name = #{queryParams.name}
+            </if>
+            <if test="queryParams.mobile != null and queryParams.mobile != ''">
+                AND mobile = #{queryParams.mobile}
+            </if>
+        </where>
+    </select>
+
+</mapper>

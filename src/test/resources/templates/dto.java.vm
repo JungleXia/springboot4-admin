@@ -3,8 +3,7 @@ package ${package.Parent}.model.dto;
 
 import io.swagger.v3.oas.annotations.media.Schema;
 #if(${entityLombokModel})
-import lombok.Getter;
-import lombok.Setter;
+import lombok.Data;
     #if(${chainModel})
     import lombok.experimental.Accessors;
     #end
@@ -18,8 +17,7 @@ import java.time.LocalDateTime;
  * @since ${date}
  */
 #if(${entityLombokModel})
-@Getter
-@Setter
+@Data
     #if(${chainModel})
 @Accessors(chain = true)
     #end

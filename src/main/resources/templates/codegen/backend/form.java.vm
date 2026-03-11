@@ -3,8 +3,7 @@ package ${packageName}.${moduleName}.${subpackageName};
 import java.io.Serial;
 import java.io.Serializable;
 import io.swagger.v3.oas.annotations.media.Schema;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.Data;
 #if(${hasLocalDateTime})
 import java.time.LocalDateTime;
 import com.fasterxml.jackson.annotation.JsonFormat;
@@ -22,8 +21,7 @@ import jakarta.validation.constraints.*;
  * @author ${author}
  * @since ${date}
  */
-@Getter
-@Setter
+@Data
 @Schema(description = "$!{businessName}表单对象")
 public class ${entityName}Form implements Serializable {
 
@@ -41,7 +39,6 @@ public class ${entityName}Form implements Serializable {
                 #if($fieldConfig.fieldType == 'String')
     @NotBlank(message = "$fieldConfig.fieldComment不能为空")
                 #else
-    @NotNull(message = "$fieldConfig.fieldComment不能为空")
                 #end
             #end
     #if($fieldConfig.maxLength)
