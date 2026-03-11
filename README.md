@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <div align="center">
    <img alt="logo" width="100" height="100" src="https://foruda.gitee.com/images/1733417239320800627/3c5290fe_716974.png">
    <h2>youlai-boot</h2>
@@ -203,3 +204,7 @@ docker-compose up -d
   <a href="https://www.youlai.tech">🌐 官网</a> •
   <a href="https://youlai.blog.csdn.net/">📝 博客</a>
 </p>
+=======
+# springboot4
+springboot + jdk25
+>>>>>>> 37f32725583cf0c13497dd92cfbcb2a2f7bd35ed
